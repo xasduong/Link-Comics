@@ -1,0 +1,237 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Lora";
+}
+
+a {
+    text-decoration: none;
+}
+.btn {
+    cursor: pointer;
+}
+.hide {
+    display: none;
+}
+.col {
+    width: 96%;
+    max-width: 1300px;
+}
+input {
+    width: 100%;
+    padding: 10px 14px;
+    outline: none;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+ul {
+    list-style: none;
+}
+/* --------------------------------- */
+nav {
+    height: 56px;
+    background: rgba(0,0,0, .2);
+    margin: 0 auto;
+}
+nav .col {
+    display: flex;
+    justify-content: space-between;
+}
+nav .search {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 6px;
+    margin-left: 30px;
+}
+nav .bar {
+    display: none;
+}
+nav .list {
+    display: flex;
+    z-index: 9999;
+    position: relative;
+    border-radius: 3px;
+}
+nav .list li {
+    padding: 18px 20px;
+    border-right: 1px solid #adaaaa;
+    color: white;
+}
+nav .list li:hover {
+    background: rgba(0,0,0,0.5);
+}
+/* --------------------------------- */
+
+#contain {
+    margin: 40px auto;
+}
+#contain .image {
+    position: fixed;
+    top: 0; right: 0; bottom: 0; left: 0;
+    width: 100%;
+    z-index: -2;
+    height: 100%;
+}
+#contain .extra {
+    position: fixed;
+    bottom: 20px; right: 20px;
+    color: white;
+    background: rgba(122, 121, 121, 0.5);
+    padding: 12px;
+    border-radius: 5px;
+    text-shadow: 1px 2px 3px black;
+}
+.box-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px 20px;
+}
+.box-links_item {
+    position: relative;
+    border: 1px solid #f5f5f5;
+    padding: 12px 12px;
+    border-radius: 5px;
+    background: rgb(255, 254, 254);
+    box-shadow: 1px 1px 2px black;
+}
+.box-links_item .bar {
+    position: absolute;
+    top: 14px;
+    right: 12px;
+    font-size: 1.3em;
+    transition: .3s;
+}
+.box-links_item .bar:hover {
+    color: rgb(15, 83, 104);
+    right: 10px;
+}
+.box-links_item a {
+    display: block;
+    color: black;
+}
+.box-links_item a.name {
+    font-size: 1.2em;
+    padding-right: 20px;
+    text-transform: capitalize;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+     -webkit-box-orient: vertical;
+     overflow: hidden;
+}
+.box-links_item a.chap {
+    font-size: .8em;
+    font-style: italic;
+    padding-top: 12px;
+    color: rgb(73, 72, 72);
+}
+.box-links_item a:hover {
+    color: rgb(45, 165, 221);
+    transition: 0.3s;
+}
+.box-links_item a.chap .num {
+    float: left;
+}
+.box-links_item a.chap .day {
+    float: right;
+}
+/* ---------------------------- */
+.box-input {
+    position: fixed;
+    top: -500px;
+    left: 50%;
+    transform: translatex(-50%);
+    max-width: 600px;
+    width: 96%;
+    margin: 0 auto;
+    background: rgb(234, 239, 241);
+    padding: 20px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    transition: .5s;
+    box-shadow: 2px 4px 6px black;
+}
+
+.box-input h2 {
+    font-style: italic;
+    text-align: center;
+    color: #2e11bf;
+}
+.box-input input {
+    margin-bottom: 12px;
+}
+.box-input .close {
+    position: absolute;
+    top: 12px; right: 18px;
+    font-size: 2.4em;
+}
+.box-input .close:hover {
+    color: red;
+}
+.box-input .wrap {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 12px;
+    margin-top: 20px;
+}
+.box-input input[type="button"] {
+    width: 200px;
+    margin: 12px auto;
+    display: block;
+    color: white;
+    background: rgb(61, 87, 236);
+    border: 1px solid rgb(110, 110, 110);
+    border-radius: 5px;
+    transition: .3s;
+    cursor: pointer;
+}
+.box-input input[type="button"]:hover {
+    background: rgb(25, 140, 185);
+}
+@media only screen and (max-width: 450px) {
+    .box-links {
+        grid-template-columns: 1fr;
+    }    
+    nav .col {
+        display: block;
+    }
+    nav .col span {
+        display: flex;
+        justify-content: space-between;
+        gap: 18px;
+        padding: 8px;
+        margin-left: 18px;
+    }
+    nav .list {
+        display: none;
+        margin-left: 12px;
+        background: rgb(82, 81, 81);
+    }
+    nav .list li { 
+        border: none;
+    }
+
+    nav .search {
+        margin: 0;
+    }
+    nav .bar {
+        display: block;
+        font-size: 2em;
+        background:rgb(25, 140, 185);
+        color: white;
+        padding: 6px 8px;
+        border-radius: 5px;
+    }
+}
+@media only screen and (max-width: 650px) and (min-width: 451px) {
+    .box-links {
+        grid-template-columns: 1fr 1fr;
+    } 
+}
+@media only screen and (max-width: 900px) and (min-width: 651px) {
+    .box-links {
+        grid-template-columns: 1fr 1fr 1fr;
+    } 
+}

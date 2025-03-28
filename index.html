@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/13dc34c750.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <title>Link Comics</title>
+</head>
+<body>
+    <nav>
+        <div class="col">
+            <span>
+                <input type="text" class="search" placeholder="Tìm kiếm truyện...">
+                <i class="fa-solid fa-bars bar"></i>
+            </span>
+            <ul class="list">
+                <li class="btn">Gần nhất</li>
+                <li class="btn">Theo alpha</li>
+                <li class="btn">Số chương</li>
+                <li class="btn">Lọc truyện</li>
+            </ul>
+        </div>
+    </nav>
+    <div id="contain" class="col">
+        <div class="box-links"><!--JS--></div>
+        <form method="post" action="" class="box-input">
+            <h1>Thêm truyện tranh</h1>
+            <h2></h2>
+            <span class="wrap">
+                <input type="text" class="name" placeholder="Tên truyện...">
+                <input type="number" class="chap" min="0" placeholder="Số chương...">
+            </span>
+            <input type="text" class="link" placeholder="Đường dẫn truyện...">
+            <input type="button" value="Thêm truyện">
+            <span class="erase btn hide">Xoá Truyện</span>
+            <i class="fa-solid fa-xmark close btn"></i>
+        </form>
+        <span class="extra btn">Extra</span>
+        <img src="anh.jpg" class="image" alt="">
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script> -->
+</body>
+</html>
