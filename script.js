@@ -14,6 +14,7 @@ var dataWeb = getApi("dataWeb").sort((a, b) => {
 });
 if (dataWeb == undefined) {
     arrayComic = [];
+    postApi('dataWeb', []);
 } else {
     arrayComic = dataWeb;
 }
