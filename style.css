@@ -29,39 +29,7 @@ input {
 ul {
     list-style: none;
 }
-/* --------------------------------- */
-nav {
-    height: 56px;
-    background: rgba(0,0,0, .2);
-    margin: 0 auto;
-}
-nav .col {
-    display: flex;
-    justify-content: space-between;
-}
-nav .search {
-    width: 100%;
-    max-width: 500px;
-    margin-top: 6px;
-    margin-left: 30px;
-}
-nav .bar {
-    display: none;
-}
-nav .list {
-    display: flex;
-    z-index: 9999;
-    position: relative;
-    border-radius: 3px;
-}
-nav .list li {
-    padding: 18px 20px;
-    border-right: 1px solid #adaaaa;
-    color: white;
-}
-nav .list li:hover {
-    background: rgba(0,0,0,0.5);
-}
+
 /* --------------------------------- */
 
 #contain {
@@ -176,54 +144,34 @@ nav .list li:hover {
     gap: 12px;
     margin-top: 20px;
 }
+.box-input h3 {
+    margin: 20px 0 12px 0;
+    text-align: center;
+}
 .box-input input[type="button"] {
     width: 200px;
     margin: 12px auto;
     display: block;
     color: white;
     background: rgb(61, 87, 236);
-    border: 1px solid rgb(110, 110, 110);
     border-radius: 5px;
     transition: .3s;
     cursor: pointer;
+    box-shadow: 1px 2px 3px rgb(175, 175, 175);
+}
+.box-input input.post-arr {
+    margin: 0;
+    float: right;
+    background: rgb(49, 180, 231);
+    transition: .3s;
 }
 .box-input input[type="button"]:hover {
-    background: rgb(25, 140, 185);
+    background: rgb(15, 74, 97);
 }
 @media only screen and (max-width: 450px) {
     .box-links {
         grid-template-columns: 1fr;
     }    
-    nav .col {
-        display: block;
-    }
-    nav .col span {
-        display: flex;
-        justify-content: space-between;
-        gap: 18px;
-        padding: 8px;
-        margin-left: 18px;
-    }
-    nav .list {
-        display: none;
-        margin-left: 12px;
-        background: rgb(82, 81, 81);
-    }
-    nav .list li { 
-        border: none;
-    }
-
-    nav .search {
-        margin: 0;
-    }
-    nav .bar {
-        display: block;
-        font-size: 2em;
-        background:rgb(25, 140, 185);
-        color: white;
-        padding: 6px 8px;
-        border-radius: 5px;
-    }
 }
 @media only screen and (max-width: 650px) and (min-width: 451px) {
     .box-links {
