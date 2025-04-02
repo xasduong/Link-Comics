@@ -9,20 +9,6 @@
     <title>Link Comics</title>
 </head>
 <body>
-    <nav>
-        <div class="col">
-            <span>
-                <input type="text" class="search" placeholder="Tìm kiếm truyện...">
-                <i class="fa-solid fa-bars bar"></i>
-            </span>
-            <ul class="list">
-                <li class="btn">Gần nhất</li>
-                <li class="btn">Theo alpha</li>
-                <li class="btn">Số chương</li>
-                <li class="btn">Lọc truyện</li>
-            </ul>
-        </div>
-    </nav>
     <div id="contain" class="col">
         <div class="box-links"><!--JS--></div>
         <form method="post" action="" class="box-input">
@@ -36,6 +22,12 @@
             <input type="button" value="Thêm truyện">
             <span class="erase btn hide">Xoá Truyện</span>
             <i class="fa-solid fa-xmark close btn"></i>
+            <span class="api hide">
+                <h3>Đẩy mảng lên LocalStorage</h3>
+                <input type="text" class="current" placeholder="Mảng hiện tại...">
+                <input type="text" class="array" placeholder="Mảng truyện mới">
+                <input type="button" class="post-arr" value="Thêm mảng">
+            </span>
         </form>
         <span class="extra btn">Extra</span>
         <img src="anh.jpg" class="image" alt="">
